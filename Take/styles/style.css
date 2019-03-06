@@ -1,0 +1,712 @@
+/********************Шрифы****************************/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:900i');
+
+body{
+  width: 100%;
+  height: auto;
+  line-height: 24px; 
+}
+
+h2{
+  font-family: Open+Sans;
+  font-weight: 300;
+  font-size: 35px;
+  color: #222626;
+}
+
+h3{
+  font-family: Open+Sans;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.font-13{
+  font-family: Open+Sans;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.font-14{
+  font-family: Open+Sans;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/********************Header****************************/
+
+header{
+  height: 950px;
+  background: url('../images/bg-header.png') center;
+  position: relative;
+
+}
+
+.bg-1200{
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.bg-1200 svg{
+  margin-top: 20px;
+}
+
+.bg-1200 text{
+  font-family: Merriweather;
+  font-size: 20px;
+  font-weight: 900i;
+  fill: #fff
+}
+
+.bg-1200 h1{
+  padding-top: 280px;
+  padding-bottom: 35px;
+  font-family: Open+Sans;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 70px;
+}
+
+.bg-1200 p{
+  max-width: 40%;
+}
+
+.phone img{
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  position: absolute;
+  top: 26%;
+  left: 44%;
+}
+
+
+/********************Start****************************/
+
+
+.start-1200{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 115px;
+  padding-bottom: 85px;
+}
+
+.start-1200 p{
+  margin-top: 40px;
+  color: #959595;
+}
+
+.text-left{
+  float: left;
+  width: 47%;
+  padding-right: 3%;
+}
+
+.text-right{
+  float: right;
+  padding-right: 2%;
+  width: 48%;
+}
+
+.text-right p{
+  position: relative;
+  top: 135px;
+}
+
+.start-1200:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+
+/********************Photo-wall****************************/
+
+.photo-wall{
+  position: relative;
+  overflow: hidden;
+}
+
+.photo-wall-1200{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.photo-wall-1200 li{
+  display: inline-block;
+  float: left;
+  width: 25%;
+  padding-left: 3%;
+  padding-right: 5%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #fff;
+  min-height: 230px;
+  height: 1px; 
+}
+
+.photo-wall-1200 li p{
+  padding-top: 24px;
+  padding-bottom: 35px;
+}
+
+.photo-wall-1200 li a{
+  font-family: Open+Sans;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;  
+}
+
+.photo-wall-1200 .pink{
+  background-color: #f5989d;
+}
+
+.photo-wall-1200 .dark-blue{
+  background-color: #615f7d;
+}
+
+.photo-wall-1200 .small{
+  background: url('../images/client.png') center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.photo-wall-1200 .heart{
+  display: inline-block; 
+  position: relative;
+  top: 5px;
+  left: 58%;  
+}
+
+.photo-wall-1200 .short{
+  background-color: #bd8cbf;
+  position: absolute;
+}
+
+.photo-wall-1200 .large{
+  background: url('../images/see.png') center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 58%;
+  height: 100%; 
+}
+
+.photo-wall-1200 .large p{
+  width: 58%;
+  padding-bottom: 60px; 
+}
+
+.photo-wall-1200 .green{
+  background-color: #82ca9c;
+}
+
+.photo-wall-1200 .new{
+  background: url('../images/head.png') center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  width: 58%;
+  height: 100%; 
+  top: 50%;
+}
+
+.photo-wall-1200 .new p{
+  width: 58%;
+  padding-bottom: 60px; 
+}
+
+.photo-wall:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+
+/********************details****************************/
+.details-1200{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 160px;
+}
+
+.details-name{
+  padding-top: 70px;
+  font-family: Open+Sans;
+  font-weight: 600;
+  font-size: 13px;
+  color: #67676d;
+}
+
+.block-details{
+  float: left;
+  width: 22%;
+  padding-right: 3%;
+}
+
+.block-details .font-14{
+  padding-top: 25px;
+  color:  #959595;
+}
+
+.details-1200:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+
+/********************Car****************************/
+.car{ 
+  height: 875px;
+  background: url('../images/bg-car.png') center;
+}
+
+.car-1200{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 450px;
+  padding-bottom: 135px;
+  color: #fff;
+}
+
+.car-block{
+ max-width: 39%;
+}
+
+.car-block .headline{
+  font-family: Open+Sans;
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 72px;
+  padding-bottom: 35px; 
+}
+
+.car-block a{
+  padding-top: 25px;
+  font-family: Open+Sans;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+}
+
+
+/********************Reasons****************************/
+.reasons{
+  background-color: #82ca9c;
+}
+
+.reasons-1200{
+
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 125px;
+  padding-bottom: 165px;
+  color: #fff;
+}
+
+.reasons-1200 h2{
+  color: #fff;
+}
+
+.block-reason{
+  float: left;
+  width: 31%;
+  padding-right: 2%;
+}
+
+.reason-name{
+  padding-top: 70px;
+  font-family: Open+Sans;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.block-reason p{
+  padding-top: 30px;
+}
+
+.reasons-1200:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/********************Buying****************************/
+.buying{
+  background-color: #f6f7fa;
+}
+
+.buying-1200{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 145px;
+}
+
+.buying-box{
+  width: 35%;
+  padding-left: 4%;
+  padding-right: 8%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.buying-left{
+  float: left;
+}
+
+.buying-right{
+  float: right;
+  margin-left: 6%;
+}
+
+.buying-box p{
+  padding-bottom: 25px;
+}
+
+.name{
+  font-size: 30px;
+}
+
+.buying-box button{
+  width: 150px;
+  height: 50px;
+  background-color: #82ca9c;
+  color: #fff;
+  font-size: 13px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: none;
+  border-radius: 3px;
+  font-family: Open+Sans;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+}
+
+.buying-box li{
+  display: inline-block;
+  padding-right: 15px;
+}
+
+.status{
+  color: #fff;
+  background-color: #e1e1e1;
+  padding: 8px 13px;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 25px;
+  font-family: Open+Sans;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.status.popular{
+  background-color: #bd8cbf;
+}
+
+.buying-box:hover{
+  background-color: #fff;
+}
+
+.buying-1200:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+
+/********************Footer****************************/
+
+footer{
+  background-color: #192431;
+  padding-top: 130px;
+  padding-bottom: 155px;
+}
+
+.footer-1200{
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.footer-name{
+  font-family: Open+Sans;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.footer-left{
+  float: left;
+  width: 52%;
+  padding-right: 6%;
+}
+
+.footer-left .font-14{
+  padding-bottom: 70px;
+}
+
+.footer-left ul{
+  float: left;
+  width: 33%;
+}
+
+.footer-left .first{
+  padding-bottom: 30px;
+}
+
+.footer-right{
+  float: right;
+  width: 42%;
+}
+
+.footer-right .field{
+  max-height: 60px;
+  max-width: 93%;
+  padding-top: 30px;   
+  padding-bottom: 18px;
+}
+
+input[type="email"] {
+  height: 60px;
+  width: 80%; 
+  float: left;
+  border: none; 
+}
+
+button{
+  width: 18%; 
+  height: 62px;
+  background-color: #82ca9c;
+  border: none; 
+}
+
+button img{
+  vertical-align: middle;
+}
+
+.footer-left .font-14{
+  padding-top: 18px;
+  padding-bottom: 70px;
+}
+.footer-right p{
+  clear: both;
+}
+
+.footer-1200:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+
+@media (max-width: 600px){
+  .bg-1200,
+  .start-1200,
+  .photo-wall-1200,
+  .details-1200,
+  .car-1200,
+  .reasons-1200,
+  .buying-1200,
+  .footer-1200{
+    max-width: 560px;
+    padding-left: 20px;
+    padding-right: 20px; 
+    margin: 0 auto;
+  }
+
+  .start-1200,
+  .photo-wall-1200 li,
+  .details-1200,
+  .reasons-1200,
+  .buying-1200,
+  .footer-1200{
+    padding-top: 50px; 
+    padding-bottom: 25px;
+  }
+
+  .bg-1200 p{
+    max-width: 100%;
+  }
+
+  .text-left,
+  .photo-wall-1200 li,
+  .block-details,
+  .block-reason,
+  .footer-left,
+  .footer-right{
+    width: 100%;
+    padding-right: 0px;
+  }
+
+  .photo-wall-1200 .short,
+  .photo-wall-1200 .new{
+    position: static;
+  }
+
+  .photo-wall-1200 .large,
+  .photo-wall-1200 .new{
+    width:100%;
+  }
+
+  .photo-wall-1200 .large p,
+  .photo-wall-1200 .new p{
+    width:100%;
+  }
+
+  .buying-box{
+    width: 88%; 
+    margin-top: 10px; 
+  }
+
+  .buying-right{
+    margin-left: 0px; 
+  }
+
+  .text-right{
+    width: 100%;
+    position: relative;
+    top: -135px;
+  }
+
+  .phone{
+    display: none;
+  }
+
+  h2{
+    line-height: 40px;  
+    font-size: 28px;
+  }
+
+  .details-name{
+    padding-top: 40px;    
+  }
+
+  .block-details .font-14{
+    padding-top: 15px;  
+  }
+
+  .car-block{
+    max-width: 100%;
+  }
+
+  .car-block .headline{
+    font-size: calc(100vw/9);
+    line-height: 40px;  
+  }
+
+  .footer-left p{
+    padding-bottom: 35px; 
+  }
+
+  .footer-right{
+    margin-top: 50px; 
+  }
+
+}
+
+@media  (min-width: 601px) and (max-width: 1024px){
+
+  .bg-1200,
+  .start-1200,
+  .photo-wall-1200,
+  .details-1200,
+  .car-1200,
+  .reasons-1200,
+  .buying-1200,
+  .footer-1200{
+    max-width: 944px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0 auto;
+  }
+
+  .start-1200,
+  .details-1200,
+  .photo-wall-1200 li,
+  .reasons-1200,
+  .buying-1200,
+  .footer-1200{
+    padding-top: 50px; 
+    padding-bottom: 35px;
+  }
+
+  .phone{
+    display: none;
+  }
+
+  .text-right{
+    position: relative;
+    top: -110px;
+  }
+
+  h3{
+    font-size: 17px;
+  }
+
+  .photo-wall-1200 li{
+    width: 27%;
+    padding-right: 3%;  
+  } 
+
+ .small .heart{
+  left: 28%;  
+  }
+
+  .photo-wall-1200 .short,
+  .photo-wall-1200 .new{
+    position: static;
+  }
+
+  .photo-wall-1200 .large,
+  .photo-wall-1200 .new{
+      width: 60%;
+  }
+
+  .block-details{
+   width: 47%;
+ }
+
+ .car-block{
+  max-width: 51%;
+}
+
+.car-block .headline{
+  font-size: calc(100vw/17);
+  line-height: 60px; 
+}
+
+.reasons-1200{
+  padding-top: 100px;  
+}
+
+}
+
+@media  (min-width: 1025px) and (max-width: 1200px){
+
+  .phone img {
+    max-height: 90%;
+    top: 45%;
+    left: 35%;
+  }
+
+}
