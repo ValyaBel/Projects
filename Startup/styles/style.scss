@@ -1,0 +1,759 @@
+$bg-header: url("../../images/bg-header.png");
+$color-title: #555555;
+$color-text: #555555;
+$bg-about-clients: #f8f8f8;
+$bg-paralax: url("../../images/paralax-bg.png");
+$bg-footer: #c0301c;
+$footer-text: #fff;
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700');
+
+
+@mixin flex($content, $direction, $align){
+	display: flex;
+	justify-content: $content;
+	flex-direction: $direction;
+	align-items: $align;
+
+}
+
+@mixin fonts($family, $size, $weight, $color){
+	font-family: $family;
+	font-size: $size;
+	font-weight: $weight;
+	color: $color; 
+
+}
+
+.wrap{
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+a{
+	text-decoration: none;
+}
+
+/***************************************HEADER********************************/
+
+header{
+	background-image: $bg-header;
+	background-size: cover;
+	max-height: 770px;
+}
+	
+.header-top{
+	@include flex(space-between, row, auto);
+		padding: 40px 0px;
+
+	nav{
+			width: 50%;
+		}
+}
+
+.logo-link{
+	@include fonts(Montserrat, 24px, 700, #fff);
+}
+
+.list{
+	@include flex(space-between, row, auto);
+}
+
+.list-link{
+	@include fonts(Montserrat, 14px, 400, #fff);
+}
+
+.caption{
+	@include flex(center, column, center);
+	padding: 195px 0px 205px 0px ;
+
+	h1{
+		@include fonts(Montserrat, 48px, 700, #fff);
+		margin: 30px 0px;
+	}
+
+	p{
+		@include fonts(Roboto+Slab, 20px, 400, #fff);
+	}
+}
+
+.btn{
+	@include fonts(Montserrat, 16px, 400, #fff);
+	background-color: transparent;
+	padding: 15px 35px;
+	border: 2px solid #fff;
+	margin: 55px 0px; 
+	text-transform: uppercase;
+	outline: none;
+}
+
+.btn:hover{
+	background-color: #fff;
+	color: #c0301c;
+}
+
+/***************************************SERVICES********************************/
+
+.description{
+	@include flex(center, column, center);
+
+	h2{
+		@include fonts(Montserrat, 20px, 400, $color-title);
+		text-transform: uppercase;
+	}
+
+	hr{
+		width: 50px;
+		margin: 30px 0px;
+	}
+}
+
+.description-text{
+		@include fonts(Roboto+Slab, 16px, 400, $color-text);
+		line-height: 25px;
+}
+
+
+.services{
+	padding: 103px 0px;
+}
+
+.services-block{
+	@include flex(space-between, row, center);
+	padding-top: 70px;
+}
+
+.services-box{
+	width: 27%;
+	@include flex(center, column, center);
+			
+	h3{
+		@include fonts(Montserrat, 14px, 400, $color-title);
+		padding: 30px 0px;
+	}
+}
+
+.services-box-text{
+	@extend .description-text;
+	font-size: 14px;
+	text-align: center;
+}
+
+/***************************************ABOUT********************************/
+
+.about{
+	background-color: $bg-about-clients;
+	@extend .services;
+}
+
+.about-text{
+	@include flex(space-between, row, center);
+	@extend .description-text;
+	font-size: 14px;
+	padding: 70px 0px;
+
+		p{
+			width: 48%;
+		}
+}
+
+.arrow-left{
+	position: absolute;
+	top: 100px;
+	padding: 10px 10px 10px 15px;
+	z-index: 10;
+	background-color: #c0301c;
+}
+
+.arrow-right{
+	position: absolute;
+	top: 100px;
+	right: 0px;
+	padding: 10px 15px 10px 10px;
+	z-index: 10;
+	background-color: #c0301c;
+}
+
+.photo-wall-item{
+ 	@include flex(space-between, row, center);
+ 	text-align: center;
+ 	position: relative;
+ 	z-index: 1;
+ }
+
+ .profile{
+ 		min-height: 100%;
+ 		min-width: 100%;
+
+ 		&:hover{
+ 			filter: brightness(60%);
+ 		}
+
+ }
+ 
+.name{
+ 	padding: 20px 0px 15px 0px;
+ 	@include fonts(Montserrat, 14px, 400, $color-title);
+ 	text-transform: uppercase;
+}
+
+.profession{
+ 	@include fonts(Roboto+Slab, 13px, 400, $color-text);
+}
+
+.profile-social{
+ 	position: relative;
+ 	top: -40px;
+	@include flex(center, row, center);
+ }
+
+.profile-link{
+ 	padding: 10px;
+ 	box-sizing: padding-box;
+
+ 	&:hover{
+ 	background-color: #c0301c;
+ 	}
+}
+ 	
+
+/***************************************WORKS********************************/
+
+.works{
+	padding: 100px 0 70px 0px;
+}
+
+.works-menu{
+	@include flex(center, row, auto);
+	padding-bottom: 70px;
+}
+
+.works-item{
+	padding: 0px 12px;
+	@include fonts(Roboto+Slab, 14px, 400, $color-text);
+
+	&:hover{
+		color: #c0301c;
+	}
+}
+
+.photo-block{
+	@include flex(space-between, row, auto);
+	flex-wrap: wrap;
+}
+	
+.photo-box{
+	margin-bottom: 31px;
+	position: relative;
+}
+
+.box{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	right: 0;
+	bottom: 0;
+	display: none;
+	text-align: center;
+}
+
+.box-name{
+	padding-top: 100px;
+	@include fonts(Montserrat, 18px, 400, #fff);
+}
+
+.category{
+	padding: 15px 0px 20px 0px;
+	@include fonts(Roboto+Slab, 12px, 400, #fff);
+}
+
+.box-link{
+	text-transform: uppercase;
+	padding: 15px 25px;
+	@include fonts(Roboto+Slab, 14px, 400, #c0301c);
+	background-color: #fff;
+}
+
+.photo-box:hover .box{
+		background-color: rgba(192, 48, 28, 0.3);
+		display: block;
+}
+
+/***************************************PARALAX********************************/
+
+
+.paralax{
+	padding-top: 70px;
+	background-image: $bg-paralax;
+	background-repeat: no-repeat;
+	@include flex(center, column, center);
+	text-align: center;
+	background-size: cover;
+}
+
+.paralax-text{
+	align-self: center;
+	@include fonts(Roboto+Slab, 30px, 400, #fff);
+	line-height: 40px;
+}
+
+/***************************************BLOG********************************/
+
+.blog{
+	padding: 103px 0px 63px 0px;
+}
+
+.blog-block{
+	margin-top: 30px;
+	article{
+	@include flex(space-between, row, flex-start);
+	padding: 40px 0px;
+
+		&:first-child{
+			border-bottom: 1px solid $color-text;
+		}
+
+		img{
+			width: 42%;
+		}
+	}
+}
+
+.blog-box{
+	width: 55%;
+}			
+
+.blog-desc{
+	@include flex(flex-start, row, auto);
+}
+
+.date{
+	padding: 20px;
+	border: 1px solid  $color-text;
+}
+
+.numeral{
+	@include fonts(Montserrat, 24px, 700, $color-text);
+}
+
+.month{
+	@include fonts(Montserrat, 14px, 700, $color-text);
+}
+
+.blog-title{
+	padding-left: 25px;
+}
+
+.blog-name{
+	@include fonts(Montserrat, 16px, 400, $color-title);
+	text-transform: uppercase;
+	padding: 15px 0px;
+
+	&:hover{
+	color: #c0301c}
+}
+
+.author{
+		@include fonts(Roboto+Slab, 13px, 400, $color-text);
+		&:hover span{
+			color: #c0301c;
+		}
+}
+
+.blog-text{
+		padding: 25px 0px 15px 0px;
+		@include fonts(Roboto+Slab, 14px, 400, $color-text);
+		line-height: 25px;
+}
+
+.blog-link{
+		@include fonts(Roboto+Slab, 13px, 700, $color-text);
+		&:hover{
+				color: #c0301c;
+			}
+}
+
+
+/***************************************CLIENTS********************************/
+
+.clients{
+	@extend .services;
+	background-color: $bg-about-clients;
+	@include flex(center, column, center);
+}
+
+.quote{
+		text-align: center;
+		@include fonts(Roboto+Slab, 18px, 400, $color-text);
+		padding-top: 65px;
+		line-height: 24px;
+}
+
+.quote-author{
+		padding: 45px 0;
+		@include fonts(Roboto+Slab, 20px, 400, $color-text); 
+}
+
+.brend-block{
+	@include flex(center, row, center);
+}
+
+.brend{
+		padding-left: 35px;
+		padding-right: 35px;
+}
+
+.circle-list{
+	@include flex(center, row, center);
+}
+
+.circle-item{
+	width: 13px;	
+	height: 13px;	
+	margin: 0px 3px;	
+	border-radius: 50%;
+	background-color: #dddddd;
+
+	&:hover{
+		background-color: #c0301c;;	
+	}
+}
+
+/***************************************CONTACTS********************************/
+
+.contacts{
+	@extend .services;
+}
+.contact-block{
+	@include flex(space-between, row, auto);
+	padding-top: 73px;
+}
+
+.contact-list{
+	width: 30%;
+	@include flex(space-between, column, flex-start);
+}
+
+.contact-item{
+	@include fonts(Roboto+Slab, 12px, 400, $color-text);
+	line-height: 20px;
+
+	a{
+		color: $color-text;
+	}
+
+	&:last-child a{
+		margin-left: 35px;	
+	}
+}
+
+.address-text{
+	margin-left: 31px;	
+}
+
+.phone-link{
+	margin-left: 33px;
+}
+
+.contact-title{
+	@include fonts(Montserrat, 14px, 400, $color-title);
+	text-transform: uppercase;
+}
+
+.address:before{
+	display: inline-block;
+	content: url("../../images/map.png");
+	margin-right: 20px;	
+}
+
+.phone:before{
+	display: inline-block;
+	content: url("../../images/phone.png");
+	margin-right: 20px;	
+}
+
+.email:before{
+	display: inline-block;
+	content: url("../../images/email.png");
+	margin-right: 20px;	
+}
+
+form{
+	width: 63%;
+	@include flex(space-between, row, center);
+	flex-wrap: wrap;
+
+}
+
+input{
+	min-height: 45px;
+	padding-left: 20px;
+	margin-bottom: 24px;
+	width: 44%;
+	border: 1px solid $color-text;		
+
+	&:hover{
+		border-color: $bg-footer;
+	}
+}
+
+.message{
+	width: 100%;
+}
+
+.btn-form{
+	padding: 18px 35px;
+	background-color: transparent;
+	@include fonts(Roboto+Slab, 14px, 400, $color-text);
+	text-transform: uppercase;
+	outline: none;
+	border: 1px solid $color-text;
+
+	&:hover{
+		border-color: $bg-footer;
+		background-color: $bg-footer;
+		color: #fff;
+	}
+}
+
+.context{
+	width: 70%;
+	@include fonts(Roboto+Slab, 12px, 400, $color-text);
+	text-align: left;
+	padding-left: 40px;	
+		span{
+			color: #c0301c;
+		}
+}
+/***************************************FOOTER********************************/
+
+footer{
+	background-color: $bg-footer;
+	@include flex(center, column, center);
+	@extend .services;
+
+	.social{
+			 @include flex(center, row, center);
+		}
+	.social-link{
+		padding-left: 9px;
+		padding-right: 9px;
+	}
+
+	hr{
+		width: 50px;
+		margin: 30px 0px;
+		background-color: $footer-text;
+	}
+
+	p{
+		text-transform: uppercase;
+		@include fonts(Roboto+Slab, 12px, 400, $footer-text);
+	}
+
+}
+
+
+
+/***************************************MEDIA********************************/
+
+@media  (min-width: 641px) and (max-width: 1024px){
+
+	.wrap{
+	    padding: 70px 25px; 
+	    max-width: 974px;
+	    margin: 0 auto;
+	 }
+
+	.header-top nav {
+		width: 70%;	
+	}
+
+
+	.photo-wall-item{
+		flex-wrap: wrap;
+	}
+
+	.photo-wall-item li{
+		width: 46%;	
+		padding-bottom: 20px;
+	}
+
+	.name{
+		padding-top: 0px;	
+	}
+
+	.photo-block{
+		justify-content: space-around;
+	}
+
+	.box-img{
+		width: 100%;	
+	}
+
+	.brend-block{
+		@include flex(space-between, column, center);
+
+		img{
+			padding-bottom: 25px;	
+		}
+	}
+
+	.btn-form{
+		margin-bottom: 25px;
+	}
+}
+
+
+@media  (max-width: 640px){
+	.wrap{
+	    padding: 20px 25px; 
+	    max-width: 590px;
+	    margin: 0 auto;
+	 }
+
+	 .header-top{
+	 	flex-wrap: wrap;
+	 }
+	
+	.caption{
+		padding: 10px 0px;
+
+		p{
+			text-align: center;
+		}	
+	}
+
+	 h1{
+		text-align: center;	
+	 }
+
+	.header-top nav {
+		width: 50%;
+	}
+
+	.list{
+		display: flex;	
+		flex-direction: column;	
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.list-item{
+		padding-bottom: 8px;	
+	}
+
+	.description-text{
+		text-align: center;
+		font-size: 14px;
+	}
+
+	.services-block{
+		flex-wrap: wrap;	
+	}
+	
+	.services-box{
+		width: 100%;
+		padding-bottom: 40px;		
+	}
+
+	.about-text{
+		flex-wrap: wrap;
+
+		p{
+			width: 100%;
+			padding-top: 30px;		
+		}
+	}
+
+	.photo-wall-item{
+		flex-wrap: 	wrap;
+
+		li{
+			width: 100%;
+			padding-top: 30px;	
+		}
+	}
+
+	.box-img{
+		width: 100%;	
+	}
+
+	.profile-social{
+		top: -70px;
+	}
+
+	.works-menu{
+		@include flex(space-between, column, center);
+	}
+
+	.photo-block{
+		justify-content: center;
+	}
+
+	.photo-block{
+		flex-wrap: 	wrap;
+	}
+
+	article{
+		flex-wrap: wrap;
+
+		img{
+			width: 100%;	
+			padding-bottom: 40px;	
+		}
+	}
+	
+	.blog-name{
+		font-size: 14px;
+	}
+
+	.blog-box{
+		width: 100%;	
+	}
+
+	.brend-block{
+		@include flex(space-between, column, center);
+
+		img{
+			padding-bottom: 25px;	
+		}
+	}
+
+	.contact-block{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	form,
+	input[type="text"],
+	.contact-list{
+		width: 100%;
+	}
+
+	.contact-list{
+		align-items: center;
+		margin-bottom: 25px;
+	}
+
+	.contact-item{
+		width: 100%;
+	}
+
+	.btn-form{
+		width: 100%;	
+		margin-bottom: 25px;
+	}
+
+	.context{
+		padding: 0;	
+		width: 100%;	
+		line-height: 15px;	
+	}
+
+}
+
