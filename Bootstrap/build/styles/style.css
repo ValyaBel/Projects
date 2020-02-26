@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+@font-face {
+  font-family: 'BigNoodleTitlingRegular';
+  src: url("build/fonts/big_noodle_titling.eot");
+  src: url("build/fonts/big_noodle_titling.eot") format("embedded-opentype"), url("build/fonts/big_noodle_titling.woff") format("woff"), url("build/fonts/big_noodle_titling.ttf") format("truetype"), url("build/fonts/big_noodle_titling.svg#BigNoodleTitlingRegular") format("svg"); }
+
+.navbar-brand {
+  font-family: BigNoodleTitlingRegular;
+  font-size: 40px;
+  font-weight: 400;
+  color: #696969; }
+  .navbar-brand:hover {
+    text-decoration: none;
+    color: #696969; }
+
+.fa-1x {
+  font-size: 40px;
+  color: #554948; }
+
+.navbar-toggler.toggler-example {
+  cursor: pointer; }
+
+.button-nav:focus {
+  outline: none; }
+
+.button-nav:hover {
+  display: none; }
+
+/****************************************DESCRIPTION*********************************************/
+.description_site {
+  background-color: #353535;
+  padding: 326px 0 45px 0; }
+  .description_site .carousel-item h1 {
+    font-family: BigNoodleTitlingRegular;
+    font-size: 65px;
+    font-weight: 400;
+    color: #d6d5d5; }
+  .description_site .carousel-item p {
+    font-family: BigNoodleTitlingRegular;
+    font-size: 36px;
+    font-weight: 400;
+    color: #d6d5d5;
+    line-height: 50px;
+    padding-bottom: 165px; }
+
+.scroll p {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff; }
+
+.title-block {
+  font-family: BigNoodleTitlingRegular;
+  font-size: 48px;
+  font-weight: 400;
+  color: #3d3d3d; }
+  .title-block hr {
+    background-color: #f3724d; }
+
+.title-block-light {
+  font-family: BigNoodleTitlingRegular;
+  font-size: 48px;
+  font-weight: 400;
+  color: #f6f6f6; }
+  .title-block-light hr {
+    background-color: #404040; }
+
+.title-text {
+  padding-top: 30px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 100;
+  color: #696969; }
+
+/****************************************ABOUT*********************************************/
+.about {
+  padding: 98px 0 120px 0; }
+
+.about-block {
+  padding-top: 60px; }
+
+.about-title {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  color: #707070; }
+
+.about-text {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+  color: #707070; }
+
+/*******************************************VIDEO******************************************/
+.video {
+  background-color: #171f23; }
+
+.video-title {
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 700;
+  color: #e7e7e7; }
+
+.video-text {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+  color: #696969; }
+
+.video-wrap {
+  position: relative; }
+
+.video-container {
+  display: none; }
+
+.video-overlay {
+  background-image: url("../build/images/video-img.png");
+  background-size: cover;
+  max-width: 100%; }
+
+.button-video {
+  background-color: #e64e40;
+  min-width: 125px;
+  max-width: 125px; }
+  .button-video:active, .button-video:focus {
+    outline: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important; }
+
+/*******************************************PORTFOLIO******************************************/
+.portfolio {
+  padding-top: 80px; }
+  .portfolio .nav-link {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    color: #3d3d3d; }
+    .portfolio .nav-link:hover {
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 700;
+      color: #3d3d3d;
+      text-decoration: underline;
+      -webkit-text-decoration-color: #e64e40;
+      text-decoration-color: #e64e40; }
+
+.portfolio-photo div {
+  background-color: #e84c3d;
+  border: 0.5px solid #eb7267; }
+
+/*******************************************CLIENTS******************************************/
+.clients {
+  background-color: #1c1c1c;
+  padding: 108px 0 95px 0; }
+  .clients .nav-item {
+    padding-right: 32px; }
+    .clients .nav-item a {
+      font-family: Roboto;
+      font-size: 33px;
+      font-weight: 400;
+      color: #ececec; }
+      .clients .nav-item a:hover {
+        text-decoration: none; }
+
+.img-2 {
+  position: relative;
+  top: 6px; }
+
+.skills {
+  padding: 80px 0 105px 0; }
+
+.skills-foto {
+  padding: 75px 0; }
+
+.carousel-indicators-skills li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #fff; }
+
+.carousel-indicators-skills .active {
+  background-color: #957e7d; }
+
+.skill-name {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  color: #3d3d3d; }
+
+.li-circle {
+  width: 38px;
+  height: 38px;
+  border-radius: 19px; }
+
+.title-skills {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  color: #3d3d3d; }
+
+.progress-bar {
+  background-color: #e64e40; }
+
+.number {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  color: #3d3d3d; }
+
+/*******************************************FEATURES******************************************/
+.features {
+  background-color: #171f23;
+  padding: 60px 0 54px 0; }
+
+.features-text {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  color: #f6f6f6; }
+
+.features-number {
+  font-family: Roboto;
+  font-size: 48px;
+  font-weight: 300;
+  color: #f6f6f6; }
+
+/*******************************************BLOG******************************************/
+.blog {
+  padding: 75px 0 115px 0; }
+
+.card-title {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  color: #505050; }
+
+.card-text {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+  color: #797979; }
+
+.card {
+  position: relative; }
+
+.card-hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: none;
+  padding-top: 85px; }
+
+.lock {
+  padding-right: 20px; }
+
+.card:hover .card-hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+/*******************************************CHOSES******************************************/
+.choses {
+  background-color: #171f23;
+  padding: 60px 0 90px 0; }
+  .choses .btn {
+    background-color: #f6744b; }
+
+.chose-block {
+  padding-top: 55px; }
+
+.chose-title {
+  background-color: #0e1316; }
+
+.chose-name {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff; }
+
+.price {
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 300;
+  color: #fff;
+  line-height: 38px; }
+
+.chose-text, .list-group-item {
+  background-color: #1f282c; }
+
+.choses-box span {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff; }
+
+.choses-box li {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff; }
+
+.choses-box:hover {
+  border: 2px solid #f6744b; }
+
+.choses-box:hover span {
+  color: #f6744b; }
+
+/*******************************************FORM-BLOCK******************************************/
+.form-block {
+  padding: 85px 0; }
+  .form-block form {
+    padding-top: 100px; }
+  .form-block input:active,
+  .form-block input:focus {
+    outline: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important; }
+
+.message {
+  padding-bottom: 60px; }
+
+.send-button {
+  background-color: #f6744b; }
+  .send-button:active, .send-button:focus {
+    outline: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important; }
+
+/*******************************************MAP******************************************/
+.map {
+  background-color: #0c1215;
+  padding: 32px 0; }
+  .map a {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff; }
+  .map .btn:active,
+  .map .btn:focus {
+    outline: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important; }
+
+/*******************************************FOOTER******************************************/
+.footer {
+  background-color: #171f23;
+  padding: 50px 0 60px 0; }
+  .footer p {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff; }
+
+.logo-footer {
+  font-family: BigNoodleTitlingRegular;
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff; }
+  .logo-footer:hover {
+    text-decoration: none;
+    color: #fff; }
+
+/*******************************************MEDIA******************************************/
+@media (max-width: 768px) {
+  .description_site {
+    padding-top: 150px; }
+    .description_site .carousel-item h1 {
+      font-size: 48px; }
+  .about-box {
+    border-right: 0px; }
+  .skills-text {
+    border-left: 0px; }
+  .skill-name {
+    font-size: 12px; } }

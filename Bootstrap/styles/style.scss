@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+
+@font-face {
+    font-family: 'BigNoodleTitlingRegular';
+    src: url('build/fonts/big_noodle_titling.eot');
+    src: url('build/fonts/big_noodle_titling.eot') format('embedded-opentype'),
+         url('build/fonts/big_noodle_titling.woff') format('woff'),
+         url('build/fonts/big_noodle_titling.ttf') format('truetype'),
+         url('build/fonts/big_noodle_titling.svg#BigNoodleTitlingRegular') format('svg');
+}
+
+$color-logo: #696969;
+$color-description-site: #d6d5d5;
+$color-title-block: #3d3d3d;
+$color-title-block-light: #f6f6f6;
+$color-title-text: #696969;
+$hr-bg: #f3724d;
+$color-about: #707070;
+$video-bg: #171f23;
+$video-text: #696969;
+$clients-bg: #1c1c1c;
+$title-card: #505050;
+$text-card: #797979;
+$bg-gray: #171f23;
+$features-text: #f6f6f6;
+$bg-map: #0c1215;
+$bg-footer: #171f23;
+
+@mixin fonts($family, $size, $weight, $color){
+	font-family: $family;
+	font-size: $size;
+	font-weight: $weight;
+	color: $color; 
+}
+
+.navbar-brand{
+	@include fonts(BigNoodleTitlingRegular, 40px, 400, $color-logo);
+
+	&:hover{
+		text-decoration: none;
+		color: $color-logo;
+	}
+}
+
+.fa-1x {
+	font-size: 40px;
+	color: #554948;
+}
+
+.navbar-toggler.toggler-example {
+	cursor: pointer;
+}
+
+.button-nav:focus{
+	outline: none;
+}
+
+.button-nav:hover{
+	display: none;
+}
+
+/****************************************DESCRIPTION*********************************************/
+
+.description_site{
+	background-color: #353535;
+	padding: 326px 0 45px 0; 
+
+	.carousel-item{
+		h1{
+		@include fonts(BigNoodleTitlingRegular, 65px, 400, $color-description-site);
+	}
+
+		p{
+			@include fonts(BigNoodleTitlingRegular, 36px, 400, $color-description-site);
+			line-height: 50px;
+			padding-bottom: 165px;
+		}
+	}
+	
+}
+
+.scroll{
+	p{
+		@include fonts(Roboto, 12px, 700, #fff);	
+	}
+}
+
+
+.title-block{
+  @include fonts(BigNoodleTitlingRegular, 48px, 400, $color-title-block);
+
+  hr{
+	background-color: $hr-bg;
+  }
+}
+
+.title-block-light{
+	 @include fonts(BigNoodleTitlingRegular, 48px, 400, $color-title-block-light);
+	 
+	 hr{
+		background-color: #404040;
+	  }
+}
+
+.title-text{
+	padding-top: 30px;
+	@include fonts(Roboto, 14px, 100, $color-title-text);
+}
+
+/****************************************ABOUT*********************************************/
+
+.about{
+	padding: 98px 0 120px 0;
+}
+
+.about-block{
+	padding-top: 60px;
+}
+
+.about-title{
+	@include fonts(Roboto, 18px, 700, $color-about);
+}
+
+.about-text{
+	@include fonts(Roboto, 14px, 300, $color-about);
+}
+
+
+/*******************************************VIDEO******************************************/
+.video{
+	background-color: $video-bg;
+}
+
+.video-title{
+	@include fonts(Roboto, 30px, 700, #e7e7e7);
+}
+
+.video-text{
+	@include fonts(Roboto, 14px, 300, $video-text);
+}
+
+.video-wrap{
+	position: relative;
+}
+
+.video-container{
+	display: none;
+}
+
+.video-overlay{
+  background-image: url("../build/images/video-img.png");
+  background-size: cover;
+  max-width: 100%;
+}
+
+.button-video{
+	background-color: #e64e40;
+	min-width: 125px;
+	max-width: 125px;
+	
+	&:active,
+	&:focus{
+		  outline: none !important;
+		  box-shadow: none !important;
+	}
+}
+
+/*******************************************PORTFOLIO******************************************/
+.portfolio{
+	padding-top: 80px;
+
+	.nav-link{
+		@include fonts(Roboto, 14px, 300, $color-title-block);	
+
+		&:hover{
+			@include fonts(Roboto, 14px, 700, $color-title-block);
+			text-decoration: underline;
+			text-decoration-color: #e64e40;
+		}
+	}
+}
+
+.portfolio-photo{
+	div{
+		background-color: #e84c3d;
+		border: 0.5px solid #eb7267;
+	}
+}
+
+/*******************************************CLIENTS******************************************/
+
+.clients{
+	background-color: $clients-bg;
+	padding: 108px 0 95px 0;
+
+	.nav-item{
+		padding-right: 32px;
+
+		a{
+			@include fonts(Roboto, 33px, 400, #ececec);
+
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.img-2{
+	position: relative;
+	top: 6px;
+}
+
+.skills{
+	padding: 80px 0 105px 0;
+}
+
+.skills-foto{
+	padding: 75px 0;
+}
+
+
+.carousel-indicators-skills{
+	li{
+		 width: 10px;
+		 height: 10px;
+		 border-radius: 100%;
+		 background-color: #fff;
+	}
+
+	.active{
+		background-color: #957e7d;
+	}
+}
+
+.skill-name{
+	@include fonts(Roboto, 14px, 700, $color-title-block);
+}
+
+.li-circle{
+	width: 38px;
+	height: 38px;
+	border-radius: 19px;
+}
+
+.title-skills{
+	@include fonts(Roboto, 24px, 700, $color-title-block);
+}
+
+.progress-bar{
+	background-color: #e64e40;
+}
+
+.number{
+	@include fonts(Roboto, 14px, 400, $color-title-block);
+}
+/*******************************************FEATURES******************************************/
+.features{
+	background-color: $bg-gray;
+	padding: 60px 0 54px 0;
+}
+
+.features-text{
+	@include fonts(Roboto, 18px, 300, $features-text);
+}
+
+.features-number{
+	@include fonts(Roboto, 48px, 300, $features-text);
+}
+
+/*******************************************BLOG******************************************/
+.blog{
+	padding: 75px 0 115px 0;
+}
+
+.card-title{
+	@include fonts(Roboto, 18px, 300, $title-card);
+}
+
+.card-text{
+	@include fonts(Roboto, 14px, 300, $text-card);
+}
+
+.card{
+	position: relative;
+}
+
+.card-hover{
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	display: none;
+	padding-top: 85px;
+}
+
+.lock{
+	padding-right: 20px;
+}
+
+.card:hover .card-hover{
+	display: flex;
+	justify-content: center;
+}
+
+
+/*******************************************CHOSES******************************************/
+.choses{
+	background-color: $bg-gray;
+	padding: 60px 0 90px 0;
+
+	.btn{
+		background-color: #f6744b;
+	}
+}
+
+.chose-block{
+	padding-top: 55px;
+}
+
+.chose-title{
+	background-color: #0e1316;
+}
+
+.chose-name{
+	@include fonts(Roboto, 14px, 700, #fff);
+}
+
+.price{
+	@include fonts(Roboto, 36px, 300, #fff);
+	line-height: 38px;
+}
+
+.chose-text, .list-group-item{
+	background-color: #1f282c;
+}
+
+.choses-box{
+	span{
+		@include fonts(Roboto, 14px, 700, #fff);
+	}
+
+	li{
+		@include fonts(Roboto, 14px, 400, #fff);
+	}
+}
+
+.choses-box:hover{
+	border: 2px solid #f6744b;
+}
+
+.choses-box:hover span{
+	color: #f6744b;
+}
+
+
+/*******************************************FORM-BLOCK******************************************/
+
+.form-block{
+	padding: 85px 0;
+
+	form{
+		padding-top: 100px;
+	}
+
+	input:active,
+	input:focus{
+		  outline: none !important;
+		  box-shadow: none !important;
+	}
+}
+
+.message{
+	padding-bottom: 60px;
+}
+
+.send-button{
+	background-color: #f6744b;
+
+	&:active,
+	&:focus{
+		  outline: none !important;
+		  box-shadow: none !important;
+	}
+}
+
+
+
+/*******************************************MAP******************************************/
+.map{
+	background-color: $bg-map;
+	padding: 32px 0;
+	 a{
+	 	@include fonts(Roboto, 24px, 700, #fff);
+	}
+	
+	.btn:active,
+	.btn:focus{
+		  outline: none !important;
+		  box-shadow: none !important;
+	}
+}
+
+/*******************************************FOOTER******************************************/
+.footer{
+	background-color: $bg-footer;
+	padding: 50px 0 60px 0;
+	
+	p{
+		@include fonts(Roboto, 14px, 700, #fff);
+	}
+}
+
+.logo-footer{
+	 @include fonts(BigNoodleTitlingRegular, 24px, 400, #fff);
+
+	 &:hover{
+	 	text-decoration: none;
+	 	color: #fff;
+	 }
+}
+
+/*******************************************MEDIA******************************************/
+
+@media (max-width: 768px) {
+
+	.description_site{
+	padding-top: 150px; 
+
+		.carousel-item{
+			h1{
+			font-size: 48px;
+			}
+		}
+	}
+
+	.about-box{
+ 		 border-right: 0px;
+	}
+
+	.skills-text{
+	    border-left: 0px;
+	}
+
+	.skill-name{
+		font-size: 12px;
+	}
+}
+
+
+
